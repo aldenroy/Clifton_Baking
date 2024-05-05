@@ -1,0 +1,96 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: white; /* Set text color to white */
+}
+
+body {
+    background-color: black; /* Set background color to black */
+}
+
+
+/* Header styles */
+header {
+    background-color: #000000; /* Light gray background color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use modern font */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Dark gray color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use modern font */
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000; /* Light gray background color */
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use modern font */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ffffff; /* Dark gray color */
+    font-size: 48px;
+    margin-right: 10px;
+}
+
+.follow {
+    font-size: 48px;
+}
+
+.pecan_cookies img {
+    width: 100%; /* Adjust the size of the image to 50% */
+}
+
+.oreo_cake img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.pom_cupcakes img {
+    width: 100%; /* Adjust the size of the image to 50% */
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.column img {
+    height: 500px; /* Set the height of the image */
+    width: 100%; /* Ensure the image takes up full width of its container */
+    object-fit: cover; /* Crop the image to fit its container */
+}
+
+
+
