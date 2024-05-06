@@ -38,6 +38,10 @@ nav ul li a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use modern font */
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 /* Footer styles */
 footer {
     background-color: #000000; /* Light gray background color */
@@ -92,5 +96,33 @@ h2 {
     object-fit: cover; /* Crop the image to fit its container */
 }
 
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    width: calc(50% - 10px);
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(160, 160, 160);
+    color: rgb(0, 0, 0);
+}
 
 
