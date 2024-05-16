@@ -36,6 +36,7 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff; /* Dark gray color */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use modern font */
+    font-size: 26px;
 }
 
 nav ul li a:hover {
@@ -134,4 +135,25 @@ h2 {
 .recipe-title {
     font-size: 48px;
     text-align: center;
+}
+
+.ingredient-h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.ingredient-h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.ingredient {
+    text-align: center;
+}
+
+.recipe {
+    margin-top: 15px;
 }
