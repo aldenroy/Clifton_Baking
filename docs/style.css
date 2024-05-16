@@ -14,25 +14,32 @@ header {
     background-color: #000000; /* Light gray background color */
     padding: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center the items horizontally */
+    text-align: center;
 }
 
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use modern font */
     font-size: 24px;
+    margin-bottom: 20px; /* Add space below the heading */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
+    justify-content: center; /* Center the items horizontally */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
     gap: 10px; /* Add space between items */
+    padding: 0;
 }
 
 nav ul li {
     margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
 }
 
 nav ul li a {
@@ -88,14 +95,16 @@ h2 {
 
 .column {
     flex: 1;
-    min-width: 300px; /* Ensure columns don't shrink too much on smaller screens */
+    min-width: 400px; /* Ensure columns don't shrink too much on smaller screens */
     margin: 10px;
     text-align: center;
+    height: 450px; /* Set a fixed height for all columns */
+    overflow: hidden; /* Hide any overflow */
 }
 
 .column img {
-    height: auto;
-    width: 100%;
+    height: 100%; /* Set the height of the image to fill its container */
+    width: auto; /* Allow the width to adjust based on the height */
     object-fit: cover; /* Crop the image to fit its container */
 }
 
@@ -184,6 +193,16 @@ h2 {
 
     nav ul {
         gap: 5px;
+        flex-direction: column; /* Stack the links vertically */
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
     }
 
     nav ul li a {
