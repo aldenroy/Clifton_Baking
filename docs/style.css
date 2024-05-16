@@ -9,7 +9,6 @@ body {
     background-color: black; /* Set background color to black */
 }
 
-
 /* Header styles */
 header {
     background-color: #000000; /* Light gray background color */
@@ -17,18 +16,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use modern font */
+    font-size: 24px;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 10px; /* Add space between items */
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
 }
 
@@ -36,7 +39,7 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff; /* Dark gray color */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use modern font */
-    font-size: 26px;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
@@ -52,6 +55,7 @@ footer {
 
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use modern font */
+    font-size: 24px;
 }
 
 .social-icons {
@@ -60,40 +64,38 @@ h2 {
 
 .social-icons a {
     color: #ffffff; /* Dark gray color */
-    font-size: 48px;
+    font-size: 36px;
     margin-right: 10px;
 }
 
 .follow {
-    font-size: 48px;
+    font-size: 24px;
 }
 
-.pecan_cookies img {
-    width: 100%; /* Adjust the size of the image to 50% */
-}
-
-.oreo_cake img {
-    width: 100%;
-    overflow: hidden;
-}
-
+.pecan_cookies img,
+.oreo_cake img,
 .pom_cupcakes img {
-    width: 100%; /* Adjust the size of the image to 50% */
+    width: 100%;
+    height: auto;
 }
 
 .row {
     display: flex;
+    flex-wrap: wrap; /* Ensure rows wrap on smaller screens */
+    gap: 10px;
+    justify-content: center;
 }
 
 .column {
     flex: 1;
-    margin: 0 10px;
+    min-width: 300px; /* Ensure columns don't shrink too much on smaller screens */
+    margin: 10px;
     text-align: center;
 }
 
 .column img {
-    height: 500px; /* Set the height of the image */
-    width: 100%; /* Ensure the image takes up full width of its container */
+    height: auto;
+    width: 100%;
     object-fit: cover; /* Crop the image to fit its container */
 }
 
@@ -133,19 +135,19 @@ h2 {
 }
 
 .recipe-title {
-    font-size: 48px;
+    font-size: 36px;
     text-align: center;
 }
 
 .ingredient-h1 {
     text-align: center;
-    font-size: 36px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .ingredient-h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
@@ -156,4 +158,72 @@ h2 {
 
 .recipe {
     margin-top: 15px;
+}
+
+.about {
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+    }
+
+    .follow {
+        font-size: 20px;
+    }
+
+    .column {
+        min-width: 100%; /* Make columns full width on smaller screens */
+        margin: 5px 0;
+    }
+
+    .button {
+        width: 100%; /* Make buttons full width on smaller screens */
+    }
+
+    .recipe-title {
+        font-size: 24px;
+    }
+
+    .ingredient-h1 {
+        font-size: 20px;
+    }
+
+    .ingredient-h2 {
+        font-size: 16px;
+    }
 }
